@@ -1,0 +1,34 @@
+alert("Factura venta tienda  JR");
+console.log("Factura venta tienda  JR");
+let nombre=prompt("digite su nombre");
+console.log(nombre);
+let p1=prompt("ingrese el producto 1");
+console.log(p1);
+let p2=prompt("ingrese el producto 2");
+console.log(p2);
+let p3=prompt("ingrese el producto 3");
+console.log(p3);
+let p4=prompt("ingrese el producto 4");
+console.log(p4);
+let v1=prompt("ingrese el valor del producto 1 ");
+console.log(v1);
+let v2=prompt("ingrese el valor del producto 2");
+console.log(v2);
+let v3=prompt("ingrese el valor del producto 3");
+console.log(v3);
+let v4=prompt("ingrese el valor del producto 4");
+console.log(v4);
+
+console.log("Factura #00001");
+console.log(p1+"$"+v1);
+console.log(p2+"$"+v2);
+console.log(p3+"$"+v3);
+console.log(p4+"$"+v4);
+let subt= Number.parseInt(v1)+Number.parseInt(v2)+Number.parseInt(v3)+Number.parseInt(v4);
+console.log("subtotal es $",subt);
+let d = subt*0.10;
+console.log("su descuento fue del 10%",d)
+let i = subt*0.19;
+console.log("iva 19%",i);
+let t=(subt+i)-d;
+console.log(" el total de su factura señor jhon es de $", t);
